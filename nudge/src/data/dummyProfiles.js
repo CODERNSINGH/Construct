@@ -3,247 +3,101 @@ export const examplePrompts = [
   'React developers in Delhi with 5+ years of experience',
   'Design internships that allow remote work and stipend',
   'SaaS companies hiring UI engineers in Bengaluru',
-  'Profiles with Next.js + TypeScript and fintech exposure'
-];
+  'Profiles with Next.js + TypeScript and fintech exposure',
+  'Product designers comfortable with AI co-pilots',
+  'HRs looking for MERN developers available immediately'
+]
 
-export const jobs = [
-  {
-    id: 'job-foo',
-    title: 'Graphic Designer Internship',
-    company: 'FOOZ Global LLP',
-    location: 'Remote',
-    salary: '₹20,000 – ₹25,000 monthly',
-    experience: 'No prior experience needed',
-    duration: '2 months',
-    mode: 'Remote',
-    applied: 6,
-    impressions: 1045,
-    deadline: '10 days left',
-    tags: ['Canva', 'Figma', 'Adobe Photoshop', 'AdobeXD'],
-    industry: 'Design'
-  },
-  {
-    id: 'job-aurora',
-    title: 'React Frontend Intern',
-    company: 'Aurora Stack',
-    location: 'Delhi / Remote',
-    salary: '₹28,000 – ₹35,000 monthly',
-    experience: '0-1 years • mentorship program',
-    duration: '3 months',
-    mode: 'Hybrid',
-    applied: 12,
-    impressions: 1870,
-    deadline: '7 days left',
-    tags: ['React', 'Tailwind', 'REST APIs', 'Storybook'],
-    industry: 'SaaS'
-  },
-  {
-    id: 'job-lumos',
-    title: 'Product Design Fellow',
-    company: 'Lumos Labs',
-    location: 'Bengaluru',
-    salary: '₹40,000 stipend',
-    experience: '1-2 years • portfolio required',
-    duration: '4 months',
-    mode: 'Onsite',
-    applied: 18,
-    impressions: 2310,
-    deadline: '3 days left',
-    tags: ['Figma', 'Prototyping', 'Design Systems', 'Motion'],
-    industry: 'Web3'
-  },
-  {
-    id: 'job-pixel',
-    title: 'UI Engineer (Intern)',
-    company: 'Pixelcraft',
-    location: 'Remote',
-    salary: '₹30,000 – ₹32,000 monthly',
-    experience: '1+ years in React',
-    duration: '6 months',
-    mode: 'Remote',
-    applied: 9,
-    impressions: 980,
-    deadline: '12 days left',
-    tags: ['React', 'Next.js', 'TypeScript', 'Framer Motion'],
-    industry: 'Product'
-  },
-  {
-    id: 'job-meraki',
-    title: 'Frontend Apprentice',
-    company: 'Meraki Finance',
-    location: 'Mumbai',
-    salary: '₹35,000 monthly + bonus',
-    experience: '2-3 years • fintech exposure',
-    duration: '5 months',
-    mode: 'Hybrid',
-    applied: 14,
-    impressions: 1640,
-    deadline: '14 days left',
-    tags: ['React', 'Redux Toolkit', 'Charts', 'Jest'],
-    industry: 'Fintech'
-  },
-  {
-    id: 'job-nilenso',
-    title: 'Fullstack Resident',
-    company: 'Nilenso',
-    location: 'Remote',
-    salary: '₹45,000 monthly',
-    experience: '2-4 years • Node.js preferred',
-    duration: '3 months',
-    mode: 'Remote',
-    applied: 8,
-    impressions: 1204,
-    deadline: '5 days left',
-    tags: ['React', 'Node.js', 'Postgres', 'GraphQL'],
-    industry: 'Consulting'
-  }
-];
+export const trendingPrompts = [
+  'React developer in Delhi with fintech background',
+  'Frontend engineers who know Tailwind + TypeScript',
+  'Remote UI internships with stipend above ₹20k',
+  'Profiles open to relocation to Bengaluru',
+  'Freshers with React Native shipping experience'
+]
 
-export const profiles = [
+export const aiInsights = [
   {
-    id: 1,
-    name: 'Amit Verma',
-    role: 'Senior React Developer',
-    years: 6,
-    location: 'Delhi',
-    currentCompany: 'ByteWave',
-    previousCompany: 'InnoSoft',
-    college: 'Delhi College of Engineering',
-    availability: 'Open to remote',
-    lastActive: '2h ago',
-    highlights: ['Led migration to TypeScript', 'Mentors 4 engineers'],
-    skills: ['React', 'Redux', 'TypeScript', 'Testing Library']
+    title: 'Lean towards hybrid teams this week.',
+    bullets: [
+      'Hybrid roles offer 15% higher stipends than remote-only listings.',
+      'Design-focused roles are responding 2x faster when resumes mention AI tools.',
+      'Delhi + Bengaluru together cover 68% of open prompts right now.'
+    ]
   },
   {
-    id: 2,
-    name: 'Priya Sharma',
-    role: 'Frontend Engineer',
-    years: 7,
-    location: 'Bengaluru',
-    currentCompany: 'CloudMesh',
-    previousCompany: 'ZetaLabs',
-    college: 'BITS Pilani',
-    availability: 'Actively interviewing',
-    lastActive: '15m ago',
-    highlights: ['Design system contributor', 'Next.js + GraphQL'],
-    skills: ['React', 'Next.js', 'CSS Modules', 'GraphQL']
+    title: 'Talent pool heatmap shows Delhi running hot.',
+    bullets: [
+      'Mid-level React devs in NCR move within 18 days on average.',
+      'Profiles citing TypeScript and testing stand out in HR shortlists.',
+      'Availability signals (notice <= 30d) lift reply rates by 27%.'
+    ]
   },
   {
-    id: 3,
-    name: 'Rahul Singh',
-    role: 'Fullstack Developer',
-    years: 5,
-    location: 'Delhi',
-    currentCompany: 'CodeSprint',
-    previousCompany: 'ByteWave',
-    college: 'IIT Delhi',
-    availability: '1 month notice',
-    lastActive: 'Today',
-    highlights: ['BFF layer for SaaS', 'Hands-on Node.js'],
-    skills: ['Node.js', 'React', 'Postgres', 'Docker']
-  },
-  {
-    id: 4,
-    name: 'Ananya Gupta',
-    role: 'React Native Engineer',
-    years: 4,
-    location: 'Mumbai',
-    currentCompany: 'Appify',
-    previousCompany: 'StartupX',
-    college: 'St. Xavier',
-    availability: 'Immediate',
-    lastActive: '1h ago',
-    highlights: ['Shipping weekly releases', 'Expo expert'],
-    skills: ['React Native', 'TypeScript', 'Expo', 'CI/CD']
-  },
-  {
-    id: 5,
-    name: 'Rohit Kumar',
-    role: 'Frontend Developer',
-    years: 3,
-    location: 'Delhi',
-    currentCompany: 'DesignHub',
-    previousCompany: 'Freelance',
-    college: 'Delhi University',
-    availability: 'Freelance',
-    lastActive: 'Yesterday',
-    highlights: ['A11y champion', 'Design handoff friendly'],
-    skills: ['React', 'HTML', 'CSS', 'Storybook']
-  },
-  {
-    id: 6,
-    name: 'Sonal Mehta',
-    role: 'UI Engineer',
-    years: 8,
-    location: 'Pune',
-    currentCompany: 'PixelCraft',
-    previousCompany: 'Infosys',
-    college: 'Symbiosis',
-    availability: '2 weeks notice',
-    lastActive: 'Today',
-    highlights: ['Perf optimizations', 'Leads guild'],
-    skills: ['Figma', 'React', 'Accessibility', 'Perf tooling']
-  },
-  {
-    id: 7,
-    name: 'Vikram Rao',
-    role: 'React Developer',
-    years: 9,
-    location: 'Hyderabad',
-    currentCompany: 'GreenStack',
-    previousCompany: 'TCS',
-    college: 'NIT Warangal',
-    availability: 'Notices in 45 days',
-    lastActive: '4h ago',
-    highlights: ['GraphQL federation', 'Mentors squads'],
-    skills: ['React', 'GraphQL', 'Apollo', 'Microfrontends']
-  },
-  {
-    id: 8,
-    name: 'Lakshmi Iyer',
-    role: 'Frontend Lead',
-    years: 10,
-    location: 'Chennai',
-    currentCompany: 'Orion',
-    previousCompany: 'HCL',
-    college: 'PSG Tech',
-    availability: 'Exploring',
-    lastActive: '30m ago',
-    highlights: ['Scaled design tokens', 'Coached 12 devs'],
-    skills: ['React', 'Leadership', 'TypeScript', 'People Ops']
-  },
-  {
-    id: 9,
-    name: 'Neha Patel',
-    role: 'React Developer',
-    years: 4,
-    location: 'Delhi',
-    currentCompany: 'ByteWave',
-    previousCompany: 'Campus hire',
-    college: 'DTU',
-    availability: 'Immediate',
-    lastActive: 'Virtual now',
-    highlights: ['Built internal tooling', 'Tailwind power user'],
-    skills: ['React', 'Tailwind', 'Vitest', 'PWAs']
-  },
-  {
-    id: 10,
-    name: 'Tarun Sharma',
-    role: 'React Developer',
-    years: 5,
-    location: 'Delhi',
-    currentCompany: 'InnoSoft',
-    previousCompany: 'Campus',
-    college: 'JNU',
-    availability: 'Within 2 weeks',
-    lastActive: '3h ago',
-    highlights: ['Redux Toolkit migration', 'Design pairing'],
-    skills: ['React', 'Redux Toolkit', 'Jest', 'Cypress']
+    title: 'Stipend sensitive search detected.',
+    bullets: [
+      '₹30–35k is the sweet spot for remote internships with React.',
+      'Companies pairing mentorship programs close hiring loops 40% faster.',
+      'Include “UI polish” keywords for better design-role matches.'
+    ]
   }
-];
+]
+
+// Generators
+const roles = ['Frontend Developer', 'React Intern', 'UI Engineer', 'Product Designer', 'Fullstack Dev', 'MERN Stack Lead', 'Backend Engineer', 'DevOps Engineer']
+const companies = ['TechFlow', 'Nebula', 'Orbit', 'Pixel', 'Zenith', 'Apex', 'Nova', 'Pulse', 'Quantum', 'Vertex', 'Echo', 'Flux', 'Gravity', 'Horizon', 'Iris']
+const locations = ['Remote', 'Bengaluru', 'Delhi', 'Mumbai', 'Pune', 'Hyderabad', 'Chennai', 'Gurugram']
+const skillsList = ['React', 'TypeScript', 'Node.js', 'Tailwind', 'Figma', 'Next.js', 'GraphQL', 'AWS', 'Docker', 'Python', 'Go', 'Rust', 'Svelte', 'Vue']
+
+function getRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)]
+}
+
+function generateJobs(count) {
+  return Array.from({ length: count }, (_, i) => ({
+    id: `job-${i + 1}`,
+    title: getRandom(roles),
+    company: `${getRandom(companies)} ${['Labs', 'Systems', 'Tech', 'AI', 'Solutions'][Math.floor(Math.random() * 5)]}`,
+    location: getRandom(locations),
+    salary: `₹${20 + Math.floor(Math.random() * 80)},000 monthly`,
+    experience: `${Math.floor(Math.random() * 5)} years`,
+    duration: `${1 + Math.floor(Math.random() * 6)} months`,
+    mode: Math.random() > 0.5 ? 'Remote' : 'Hybrid',
+    applied: Math.floor(Math.random() * 50),
+    impressions: 500 + Math.floor(Math.random() * 5000),
+    deadline: `${1 + Math.floor(Math.random() * 20)} days left`,
+    tags: Array.from({ length: 3 }, () => getRandom(skillsList)),
+    industry: ['SaaS', 'Fintech', 'EdTech', 'HealthTech', 'Web3'][Math.floor(Math.random() * 5)]
+  }))
+}
+
+function generateProfiles(count) {
+  const firstNames = ['Aarav', 'Vihaan', 'Aditya', 'Sai', 'Reyansh', 'Diya', 'Ananya', 'Saanvi', 'Myra', 'Zara', 'Ishaan', 'Kabir']
+  const lastNames = ['Sharma', 'Verma', 'Singh', 'Patel', 'Gupta', 'Kumar', 'Rao', 'Iyer', 'Mehta', 'Reddy', 'Nair']
+
+  return Array.from({ length: count }, (_, i) => ({
+    id: `profile-${i + 1}`,
+    name: `${getRandom(firstNames)} ${getRandom(lastNames)}`,
+    role: getRandom(roles),
+    years: 1 + Math.floor(Math.random() * 10),
+    location: getRandom(locations),
+    currentCompany: getRandom(companies),
+    previousCompany: getRandom(companies),
+    college: ['IIT', 'NIT', 'BITS', 'VIT', 'SRM', 'DTU'][Math.floor(Math.random() * 6)],
+    availability: Math.random() > 0.7 ? 'Immediate' : '1 month notice',
+    lastActive: `${Math.floor(Math.random() * 24)}h ago`,
+    highlights: ['Top performer', 'Open source contributor', 'Hackathon winner', 'Team lead'],
+    skills: Array.from({ length: 4 }, () => getRandom(skillsList))
+  }))
+}
+
+export const jobs = generateJobs(120)
+export const profiles = generateProfiles(120)
 
 export default {
   examplePrompts,
+  trendingPrompts,
+  aiInsights,
   jobs,
   profiles
-};
+}

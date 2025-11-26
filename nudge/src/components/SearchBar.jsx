@@ -1,31 +1,51 @@
 import React from 'react'
+import { Search, ArrowRight, Upload, Sparkles } from 'lucide-react'
+import '../index.css'
 
-export default function SearchBar({ value, onChange, onSubmit, placeholder = 'Remote frontend internship in tech industry using React', variant = 'hero' }) {
-  return (
-    <form className={`prompt-form ${variant}`} onSubmit={e => { e.preventDefault(); onSubmit(); }}>
-      <div className="prompt-field">
-        <span className="sparkle" aria-hidden="true">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="9" stroke="#1de5d1" strokeWidth="1.2" opacity=".4" />
-            <path d="M12 6l1.4 3.7L17 11l-3.6 1.3L12 16l-1.4-3.7L7 11l3.6-1.3L12 6z" fill="#1de5d1" />
-          </svg>
-        </span>
-        <div className="prompt-copy">
-          {variant === 'hero' && <p className="prompt-label">What are you looking for?</p>}
+export default function SearchBar({ value, onChange, onSubmit, placeholder = '...', variant = 'hero' }) {
+  if (variant === 'hero') {
+    return (
+      <div className="search-hero-container">
+        <div className="search-tabs-row">
+          <div className="search-tab active">
+            <Sparkles size={16} />
+            <span>What are you looking for?</span>
+          </div>
+          <button className="resume-upload-btn">
+            <Upload size={16} />
+            <span>Upload Resume</span>
+          </button>
+        </div>
+
+        <form
+          className="search-input-box"
+          onSubmit={e => { e.preventDefault(); onSubmit(); }}
+        >
           <input
             type="text"
             value={value}
             onChange={e => onChange(e.target.value)}
             placeholder={placeholder}
+            autoFocus
           />
-        </div>
-        <span className="input-hint">Press ↵ Enter</span>
+          <button type="submit" className="search-submit-btn" disabled={!value.trim()}>
+            <ArrowRight size={20} />
+          </button>
+        </form>
       </div>
-      <button className="prompt-submit" type="submit" aria-label="Run search">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path d="M6 12h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </button>
+    )
+  }
+
+  // Results variant (compact)
+  return (
+    <form className="search-bar-compact" onSubmit={e => { e.preventDefault(); onSubmit(); }}>
+      <Search size={18} className="search-icon" />
+      <input
+        type="text"
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        placeholder="Ask anything..."
+      />
     </form>
   )
 }
